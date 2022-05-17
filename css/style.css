@@ -1,8 +1,8 @@
 .row-header {
-    margin:0px auto;
-    padding:0px;
+    margin: 0px auto;
+    padding: 0px;
 }
-   
+
 
 .row-content {
     margin: 0px auto;
@@ -21,17 +21,29 @@
     padding: 20px 0px 20px 0px;
 }
 
-.jumbotron-fluid{
+.jumbotron-fluid {
     padding: 70px 30px 70px 30px;
-    margin: 0px auto; 
-    background-color:mediumpurple;
-    color:rgb(255, 255, 255);
+    margin: 0px auto;
+    background-color: mediumpurple;
+    color: rgb(255, 255, 255);
 }
 
-address{
+address {
     font-size: 10px;
     margin: 0px;
     color: #0f0f0f;
 }
 
 
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}
+
+.navbar-nav>.navbar-item {
+    margin-left: 20px;
+}
