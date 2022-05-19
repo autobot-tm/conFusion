@@ -21,10 +21,10 @@
     padding: 20px 0px 20px 0px;
 }
 
-.jumbotron-fluid {
+.jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background-color: mediumpurple;
+    background-color: mediumpurple !important;
     color: rgb(255, 255, 255);
 }
 
