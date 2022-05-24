@@ -25,12 +25,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="mynav" class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="navbar-item"><a href="#" class="nav-link">Link</a></li>
-            <li class="navbar-item"><a href="#" class="nav-link">Action</a></li>
-        </ul>
-    </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Action</a></li>
+            </ul>
+        </div>
     </nav>
 
     <ol class="col-12 breadcrumb">
@@ -67,11 +67,18 @@
     </form>
 
     <!-- Input Group -->
+
     <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text">@</span>
         </div>
-        <input type="text" class="form-control">
+
+        <input type="text" class="form-control" placeholder="USD">
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>  
+    </div>
+
     </div>
 
     <!-- Table Boostrap -->
@@ -95,5 +102,54 @@
             </tbody>
         </table>
     </div>
+
+    <div class="btn-group" role="group">
+        <a href="https://goole.com" role="button" class="btn btn-primary"><i class="fa fa-google"></i> Google</a>
+        <a href="https://facebook.com" role="button" class="btn btn-secondary"><i class="fa fa-facebook"></i>
+            Facebook</a>
+        <a href="https://youtube.com" role="button" class="btn btn-danger"> <i class="fa fa-youtube"></i> Youtube</a>
+    </div>
+    
+        <!-- check radio Boostrap -->
+        <form>
+            <label class="form-check-label col-sm-3">number></label>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="inlineOp" id="inlineR1" value="op1">
+                <label for="inlineR1" class="form-check-label">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="inlineOp" id="inlineR1" value="op1">
+                <label for="inlineR1" class="form-check-label">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="inlineOp" id="inlineR1" value="op1">
+                <label for="inlineR1" class="form-check-label">3</label>
+            </div>
+        </form>
+
+        <!-- Alert , class = close-->
+        <div class="alert alert-warning" role="alert">
+            <strong>Holy Shjt!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <!-- Badges, thông báo SOS-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>

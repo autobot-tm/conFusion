@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- thu vien icon -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- thu vien social -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+</head>
+
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Disabled</a>
+        </li>
+    </ul>
+
+    <!-- dropdown, navbar -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Active</a>
+        </li>        
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Action</a>
+                <a href="#" class="dropdown-item">Another action</a>
+                <a href="#" class="dropdown-item">Something else here</a>
+                <div class="dropdown-divider">
+                    <a href="#" class="dropdown-item">Separated link</a>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Disabled</a>
+        </li>
+    </ul>
+
+    <!--  -->
+
+    <!-- hiệu ứng collapse_button -->
+    <p>
+        <a href="#collapseExample" class="btn btn-primary" data-toggle="collapse" role="button">Link with href</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample">
+            Button with data-target
+        </button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multiCollapse">
+            Button with data-target
+        </button>        
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            This is a paragraph
+        </div>
+    </div>
+
+    <div class="collapse multiCollapse" id="collapseExample1">
+        <div class="card card-body">
+            This is a example 1
+        </div>
+    </div>
+
+    <div class="collapse multiCollapse" id="collapseExample2">
+        <div class="card card-body">
+            This is a example 2
+        </div>
+    </div>
+
+
+    <!-- card component -->
+    <div id="accordion">
+
+    </div>
+
+    <!-- Carousel -->
+    
+</body>
+
+</html>
