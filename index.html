@@ -14,6 +14,14 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- javascript of tooltip -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
     <!-- font-awesome -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <!-- bootstrap-social -->
@@ -23,22 +31,70 @@
 <body>
 
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="row row-navbar offset-15">
-            <button class="navbar-toggler col col-4" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
-            <div id="Navbar" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="navbar-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span>
-                            Home</a></li>
-                    <li class="navbar-item "> <a href="./aboutus.html" class="nav-link"><span
-                                class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="navbar-item"> <a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span>
-                            Menu</a></li>
-                    <li class="navbar-item"> <a href="#" class="nav-link"><span class="fa fa-address-card fa-lg"></span>
-                            Contact</a></li>
-                </ul>
+
+            <div class="row row-navbar">
+                <button class="navbar-toggler col col-4" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+                <div id="Navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="navbar-item active"><a href="#" class="nav-link"><span
+                                    class="fa fa-home fa-lg"></span>
+                                Home</a></li>
+                        <li class="navbar-item "> <a href="./aboutus.html" class="nav-link"><span
+                                    class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="navbar-item"> <a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span>
+                                Menu</a></li>
+                        <li class="navbar-item"> <a href="#" class="nav-link"><span
+                                    class="fa fa-address-card fa-lg"></span>
+                                Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-text navbar-light">
+                    <a href="#" class="navbar-link" role="button" data-toggle="modal" data-target="#loginModal"><span
+                            class="fa fa-chevron-right fa-lg"></span>Login</a>
+                </div>
+            </div>
+
+
+        <!-- Modal from reserve table -->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1"
+                                        id="exampleInputEmail3" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInput Password3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInput Password3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -51,12 +107,14 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
-
+                <div class="col-12 col-sm-3 ">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
-            </div>
-            <div class="col-12 col-sm align-self-center">
-                <img src="img/logo.png" class="img-fluid">
+                <div class="col-12 col-sm-3">
+                    <a href="#reserveform" class="btn btn-block nav-link btn-warning" role="button"
+                        data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>"
+                        data-placement="bottom">Reserve Table</a>
+                </div>
             </div>
         </div>
     </header>
@@ -72,7 +130,7 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
                         <h2>
-                            Uthappizza 
+                            Uthappizza
                             <span class="badge badge-danger">HOT</span>
                             <span class="badge badge-pill badge-secondary">$4.99</span>
                         </h2>
