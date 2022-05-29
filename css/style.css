@@ -1,6 +1,7 @@
 .row-header {
     margin: 0px auto;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .row-content {
@@ -11,7 +12,7 @@
 }
 
 .row-content-1 {
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .footer {
@@ -55,7 +56,7 @@ body {
 }
 
 .navbar-text {
-    margin-right: -392%;
+    right: 0;
 }
 
 .carousel {
@@ -70,3 +71,23 @@ body {
     min-height: 100%;
     margin: auto;
 }
+
+.breadcrumb {
+    margin: auto;
+}
+
+.card-title {
+    color: #0f0f0f;
+}
+
+.card-body {
+    color: #0f0f0f;
+}
+
+label.btn {
+    color: #0f0f0f;
+}
+
+input[type="radio"].btn-check{
+    display: none;
+  }

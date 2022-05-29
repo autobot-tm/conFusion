@@ -8,36 +8,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- font-awesome -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- bootstrap-social -->
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="row">
+    <div class="row row-navbar">  
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <button class="navbar-toggler col col-4" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
             <div id="Navbar" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="navbar-item"> <a class="nav-link" href="./index.html"><span
-                                class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="navbar-item"> <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>
-                            About</a></li>
-                    <li class="navbar-item"> <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>
+                    <li class="navbar-item"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="navbar-item "> <a href="./aboutus.html" class="nav-link"><span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="navbar-item"> <a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span>
                             Menu</a></li>
-                    <li class="navbar-item active"> <a class="nav-link" href="#"><span
+                    <li class="navbar-item active"> <a href="#" class="nav-link"><span
                                 class="fa fa-address-card fa-lg"></span>
                             Contact</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
