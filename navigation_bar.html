@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport Bootstrap Gird -->
+    <meta name="viewport" content="width=device-width, 
+                                    initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <!-- Import link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- JQuery  -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- bootstrap-social -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+</head>
+
+<body>
+    <!-- Main: Navbar, Breadcrumb, Font, Social -->
+
+    <!-- NOTE: ADD THƯ VIỆN JQUERY THÌ MỚI DÙNG ĐƯỢC NAV (VÌ có toggle) -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-describedby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="row row-navbar">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <button class="navbar-toggler col col-4" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="navbar-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="navbar-item "> <a href="#" class="nav-link"><span class="fa fa-info fa-lg"></span>
+                            About</a></li>
+                    <li class="navbar-item"> <a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span>
+                            Menu</a></li>
+                    <li class="navbar-item"> <a href="#" class="nav-link"><span class="fa fa-address-card fa-lg"></span>
+                            Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-text navbar-light">
+                <a href="#" class="navbar-link" role="button" data-toggle="modal" data-target="#loginModal"><span
+                        class="fa fa-chevron-right fa-lg"></span>Login</a>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <div class="text-center" >
+        <h3>-----------------------------------------------------------------------------------------------------------------</h3>
+    </div>
+
+    <!-- Breadcrumb -->
+    <!-- NOTE: dùng trang nào thì active trang đó và bỏ href, add url cho trang còn lại -->
+    <div class="container">
+        <div class="row">
+            <h3>Ví dụ trang này là About Us</h3>
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="text-center" >
+        <h3>-----------------------------------------------------------------------------------------------------------------</h3>
+    </div>
+
+    <!-- icon-fonts -->
+    <!-- NOTE: ADD THƯ VIỆN FONT -->
+    <!-- xem thêm mẫu: https://fontawesome.com/v4/icons/  -->
+    <!-- Add vào class cần chứa icon -->
+    <div class="container">
+        <div class="row">
+            <span class="fa fa-phone"></span>
+            <i class="fa fa-toggle-on" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="text-center" >
+        <h3>-----------------------------------------------------------------------------------------------------------------</h3>
+    </div>
+
+    <!-- bootstrap social -->
+    <!-- NOTE: ADD THƯ VIỆN  -->
+    <!-- xem thêm mẫu: https://lipis.github.io/bootstrap-social/  -->
+    <!-- Add vào class cần chứa icon -->
+    <div class="container">
+        <div class="row">
+            <a class="btn btn-block btn-social btn-twitter">
+                <span class="fa fa-twitter"></span> Sign in with Twitter
+            </a>
+
+            <a class="btn btn-social-icon btn-twitter">
+                <span class="fa fa-twitter"></span>
+            </a>
+        </div>
+    </div>
+    <div>
+        <div class="text-center">
+            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                    class="fa fa-google-plus"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                    class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                    class="fa fa-linkedin fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                    class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                    class="fa fa-youtube"></i></a>
+            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
